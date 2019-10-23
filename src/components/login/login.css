@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.diarytexture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
+    height: 600px;
+    width: 400px;
+    /*border-radius: 5px;*/
+    box-shadow: 20px 0 50px rgba(0, 0, 0, .5), 0 20px 100px rgba(0, 0, 0, .5);
+    background:
+      linear-gradient(45deg, hsla(0, 100%, 30%, 0.1) 49%, hsla(0, 100%, 20%, 0.8) 50%, hsla(0, 100%, 30%, 0.1) 50%) 0 0,
+      linear-gradient(-45deg, hsla(0, 100%, 30%, 0.1) 49%, hsla(0, 100%, 20%, 0.8) 50%, hsla(0, 100%, 30%, 0.1) 50%) 0 0;
+    background-color: #860000;
+    background-size: 100px 100px;
+  }
+
+  .diarytexturelogged {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    height: 600px;
+    width: 400px;
+    /*border-radius: 5px;*/
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 20px 100px rgba(0, 0, 0, .5);
+    background:
+      linear-gradient(45deg, hsla(0, 100%, 30%, 0.1) 49%, hsla(0, 100%, 20%, 0.8) 50%, hsla(0, 100%, 30%, 0.1) 50%) 0 0,
+      linear-gradient(-45deg, hsla(0, 100%, 30%, 0.1) 49%, hsla(0, 100%, 20%, 0.8) 50%, hsla(0, 100%, 30%, 0.1) 50%) 0 0;
+    background-color: #860000;
+    background-size: 100px 100px;
+  }
+
+  .diarytexture::before, .diarytexturelogged::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #300;
+    /*border-radius: 10px;*/
+    /*border: 1px solid #300;*/
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+  }
+
+  .diarytexture::after, .diarytexturelogged::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #300;
+    /*border: 1px solid #300;*/
+    /*border-radius: 10px;*/
+    transform-origin: left;
+    transform: skewY(-45deg);
+  }
+  .diarytexturelogged:hover{
+        transform: rotate(180deg);
+    }
+
+  .loginform {
+    height: 38%;
+    width: 85%;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid black;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .loginformlogged {
+    height: 35%;
+    width: 80%;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid black;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input[type=text],
+  input[type=password] {
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: horizontal;
+    margin-top: 0;
+  }
+
+  button {
+    background-color: white /*#4CAF50*/;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;        
+    width: 100%;
+  }
+
+  .col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+  }
+  .labelPass{
+    padding-right: 100%;
+  }
+
+  .col-751 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+
+  .col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+  }
+
+  label {
+    display: block;
+    margin-top: 18px;
+    font-size: 1em;
+    margin-left: 8px;
+  }
+
+  #ebooktitle {
+    text-align: center;
+    font-size: 1.5em;
+  }

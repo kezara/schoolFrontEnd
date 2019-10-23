@@ -1,0 +1,35 @@
+table, td, th {
+    border: none;
+    background: rgb(221, 221, 221);
+    padding-bottom: 20px;
+    margin: 0;  
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+  }
+  
+  table{
+    box-shadow: 10px 10px 10px 5px slategrey;
+  }
+  
+  thead {
+    float: left;
+    margin: 5px; 
+    text-align: right;  
+  }
+  
+  
+  thead th {
+    display: block;   
+  }
+  
+  tbody {
+    float: right;  
+    margin: 5px; 
+    text-align: left;
+  }
+  
+  tbody td {
+    display: block;   
+  }
